@@ -5,13 +5,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/K-Dense-AI/karpathy/pulls)
 
-An agentic Machine Learning Engineer that trains state-of-the-art ML models using Claude Code SDK and Google ADK. This is a very simple implemenation demonstraing the power of Claude Scientific Skills for machine learning.
+An agentic Machine Learning Engineer that trains state-of-the-art ML models using the Claude Agent SDK and Google ADK. This is a simple implementation demonstrating the power of Scientific Agent Skills for machine learning.
 
 ## Prerequisites
 
 - Python 3.13 or higher
 - [uv](https://github.com/astral-sh/uv) package manager
-- Claude Code installed and authenticated (see [installation guide](https://www.claude.com/product/claude-code))
+- Claude Code installed and authenticated (see the [Claude Code documentation](https://docs.claude.com/en/docs/claude-code/overview))
 
 ## Setup
 
@@ -52,7 +52,7 @@ python start.py
 ```
 
 This automatically:
-1. Creates a `sandbox` directory with scientific skills from Claude Scientific Skills
+1. Creates a `sandbox` directory with skills from Scientific Agent Skills
 2. Sets up a Python virtual environment with ML packages (PyTorch, transformers, scikit-learn, etc.)
 3. Copies your `.env` file to the sandbox
 4. Starts the ADK web interface
@@ -68,9 +68,9 @@ Join our K-Dense Slack community to connect with other users, share ideas, and g
 
 **[Join K-Dense Slack Community](https://join.slack.com/t/k-densecommunity/shared_invite/zt-3iajtyls1-EwmkwIZk0g_o74311Tkf5g)**
 
-## Claude Scientific Skills
+## Scientific Agent Skills
 
-This repository is designed to work with the **[Claude Scientific Skills](https://github.com/K-Dense-AI/claude-scientific-skills)** collection of ready-to-use scientific tools and workflows ([link](https://github.com/K-Dense-AI/claude-scientific-skills)). The `start.py` setup script creates a `sandbox` that includes scientific skills from this collection so the `karpathy` agent can leverage specialized ML libraries and scientific workflows. For full details on the skills themselves, see the upstream repository’s README and documentation [here](https://github.com/K-Dense-AI/claude-scientific-skills).
+This repository is designed to work with **[Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)** (formerly Claude Scientific Skills), a collection of 130+ ready-to-use Agent Skills for research, science, engineering, analysis, finance, and writing built on the open Agent Skills standard. The `start.py` setup script creates a `sandbox` that includes skills from this collection so the `karpathy` agent can leverage specialized ML libraries and scientific workflows. For full details on the skills themselves, see the upstream repository's README and documentation [here](https://github.com/K-Dense-AI/scientific-agent-skills).
 
 ## Manual Usage
 
@@ -92,7 +92,7 @@ Then navigate to **http://localhost:8000** in your browser.
 
 ## Enhanced ML Capabilities
 
-If you want substantially more powerful ML capabilities through a multi-agentic system, sign up for [www.k-dense.ai](https://www.k-dense.ai). Currently in closed beta, launching publicly in December 2025.
+If you want substantially more powerful ML capabilities through a multi-agentic system, sign up for [www.k-dense.ai](https://www.k-dense.ai).
 
 ## Upcoming Features
 

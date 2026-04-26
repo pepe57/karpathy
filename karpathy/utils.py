@@ -17,14 +17,14 @@ def load_instructions(agent_name: str) -> str:
 
 def download_scientific_skills(
     target_dir: str = "sandbox/.claude/skills",
-    github_repo: str = "K-Dense-AI/claude-scientific-skills",
+    github_repo: str = "K-Dense-AI/scientific-agent-skills",
     source_path: str = "scientific-skills",
     branch: str = "main"
 ) -> None:
     """
     Download all directories from the scientific-skills folder in the GitHub repository
     and place them in the target directory using git clone.
-    
+
     Args:
         target_dir: Local directory to save the skills to
         github_repo: GitHub repository in format "owner/repo"
@@ -41,7 +41,7 @@ def download_scientific_skills(
         
         try:
             # Clone the repository with depth 1 for faster download
-            print("Cloning Claude Scientific Skills repository (this may take a moment)...")
+            print("Cloning Scientific Agent Skills repository (this may take a moment)...")
             subprocess.run(
                 ["git", "clone", "--depth", "1", "--branch", branch, repo_url, str(temp_path)],
                 check=True,
@@ -72,7 +72,7 @@ def download_scientific_skills(
                     print(f"  [+] {skill_dir.name}")
                     skill_count += 1
             
-            print(f"\nSuccessfully downloaded {skill_count} scientific skills to {target_path.absolute()}")
+            print(f"\nSuccessfully downloaded {skill_count} scientific agent skills to {target_path.absolute()}")
             
         except subprocess.CalledProcessError as e:
             print(f"Error cloning repository: {e.stderr}")
@@ -190,8 +190,8 @@ def setup_sandbox() -> None:
     # Copy .env file from karpathy to sandbox
     copy_env_file()
     
-    # Download scientific skills
-    print("\nSetting up scientific skills...")
+    # Download scientific agent skills
+    print("\nSetting up scientific agent skills...")
     download_scientific_skills(target_dir="sandbox/.claude/skills")
     
     # Create uv virtual environment and install ML packages

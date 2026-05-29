@@ -34,3 +34,5 @@ sandbox/
 
 # Modal
 .modal/
+
+.adk/

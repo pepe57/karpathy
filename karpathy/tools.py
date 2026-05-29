@@ -1,11 +1,12 @@
 import asyncio
 from dataclasses import asdict
+from pathlib import Path
 
 from dotenv import load_dotenv
 
 from .utils import load_instructions
 
-load_dotenv("karpathy/.env")
+load_dotenv(Path(__file__).parent / ".env")
 
 COMMON_INSTRUCTIONS = load_instructions("common_instructions")
 

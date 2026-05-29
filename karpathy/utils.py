@@ -159,7 +159,7 @@ def copy_env_file() -> None:
     """
     Copy the .env file from karpathy directory to sandbox directory.
     """
-    karpathy_env = Path("karpathy/.env")
+    karpathy_env = Path(__file__).parent / ".env"
     sandbox_env = Path("sandbox/.env")
     
     if not karpathy_env.exists():

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
@@ -7,7 +8,7 @@ from google.adk.models.lite_llm import LiteLlm
 from .tools import delegate_task
 from .utils import load_instructions
 
-load_dotenv()
+load_dotenv(Path(__file__).parent / ".env")
 
 # Configuration
 MODEL = os.getenv("AGENT_MODEL")
